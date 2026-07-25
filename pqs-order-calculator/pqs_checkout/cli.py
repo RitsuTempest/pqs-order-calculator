@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from .calculator import apply_discount, calculate_shipping, calculate_subtotal
 
-APP_TITLE = "PQS Order Calculator"
+APP_TITLE = "PQS Premium Checkout Calculator"
 
 
 def _read_prices() -> list[float]:
