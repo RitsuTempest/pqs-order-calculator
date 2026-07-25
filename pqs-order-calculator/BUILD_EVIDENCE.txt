@@ -1,0 +1,7 @@
+Expected automated build evidence:
+- Clean stage completes.
+- Compile stage completes.
+- Unit test output shows exactly 3 passed and 2 failed.
+- dist/pqs_order_calculator.pyz is created.
+
+Run: python build.py
