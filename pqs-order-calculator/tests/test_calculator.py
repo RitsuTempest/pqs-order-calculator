@@ -1,4 +1,4 @@
-"""Five required unit tests: three pass and two intentionally fail."""
+"""Five unit tests for the PQS Order Calculator."""
 
 from pqs_checkout.calculator import (
     apply_discount,
@@ -20,9 +20,9 @@ def test_free_shipping_threshold_passes() -> None:
     assert calculate_shipping(100.00) == 0.00
 
 
-def test_shipping_below_threshold_intentionally_fails() -> None:
-    assert calculate_shipping(50.00) == 0.00
+def test_shipping_below_threshold_passes() -> None:
+    assert calculate_shipping(50.00) == 10.00
 
 
-def test_discounted_total_intentionally_fails() -> None:
-    assert calculate_total([50.00, 50.00], 10) == 90.00
+def test_discounted_total_passes() -> None:
+    assert calculate_total([50.00, 50.00], 10) == 100.00
